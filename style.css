@@ -1,0 +1,63 @@
+/* style.css */
+
+html {
+    font-size: 50px;
+    font-family: 'Metal Mania', cursive;
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: grey;
+    background-color: black;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 2.5rem;
+    color: orange;
+}
+
+.keys {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+.key {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.1s;
+    cursor: pointer;
+
+    /* makes text not selectable */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+    background-color: #222;
+    padding: 15px;
+    width: 2.7rem;
+    border-style: solid;
+    border-color: grey;
+}
+
+kbd {
+    font-family: inherit;
+    font-weight: bold;
+}
+
+.playing {
+    transform: scale(1.1);
+    color: orange;
+    border-color: orange;
+}
+
+p {
+    margin-top: 3rem;
+    text-align: center;
+}
