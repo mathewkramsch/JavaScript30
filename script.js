@@ -1,5 +1,15 @@
 // script.js
 
+const randomAdLib = ()=>{
+    const adLibs = ['brrrrr', 'yuh', 'yeet', 'okay', 'skirt', 'its lit', 'gratataa', 'igh', 'bow'];
+    const choice = Math.round(Math.random()*(adLibs.length-1));
+    return adLibs[choice];
+}
+
+const showWord = ()=>{
+    const p = document.querySelector('p');
+    p.textContent = randomAdLib();
+}
 
 const playSound = (keyCodeNum)=>{
     const audio = document.querySelector(`audio[data-key='${keyCodeNum}']`);
@@ -18,18 +28,6 @@ function removePlayIndication(e) {  // use function declaration so this refers t
         document.querySelector('p').textContent = '';
     }
 }
-
-const randomAdLib = ()=>{
-    const adLibs = ['brrrrr', 'yuh', 'yeet', 'okay', 'skirt', 'its lit', 'gratataa', 'igh', 'bow'];
-    const choice = Math.round(Math.random()*(adLibs.length-1));
-    return adLibs[choice];
-}
-
-const showWord = ()=>{
-    const p = document.querySelector('p');
-    p.textContent = randomAdLib();
-}
-
 
 window.addEventListener('keydown', (keyEvent)=>{
     playSound(keyEvent.keyCode);
