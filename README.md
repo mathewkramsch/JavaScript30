@@ -1,5 +1,5 @@
-# Odin Project: Drum-Kit
+# JavaScript 30: Drum-Kit
 In this project I make a keyboard Drum-Kit using JavaScript
 
-- Assignment from [The Odin Project](https://www.theodinproject.com/courses/foundations/)
+- Assignment from [JavaScript 30](https://javascript30.com/)
 - View page [here](https://mathewkramsch.github.io/odin-etch-a-sketch/)
